@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitEggTest.CSharp.Plugins", "BitEggTest.CSharp.Plugins.csproj", "{B5AD0A67-E0C7-F3A8-9CB9-58C893CA737B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitEggTest.CSharp", "BitEggTest.CSharp.csproj", "{AE4E5369-E9C1-010E-0E5A-2857E9CB4692}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitEggTest.CSharp.Editor", "BitEggTest.CSharp.Editor.csproj", "{601CBB44-76B6-C2B0-4827-4E0A209FBCB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5AD0A67-E0C7-F3A8-9CB9-58C893CA737B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5AD0A67-E0C7-F3A8-9CB9-58C893CA737B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5AD0A67-E0C7-F3A8-9CB9-58C893CA737B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5AD0A67-E0C7-F3A8-9CB9-58C893CA737B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE4E5369-E9C1-010E-0E5A-2857E9CB4692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE4E5369-E9C1-010E-0E5A-2857E9CB4692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE4E5369-E9C1-010E-0E5A-2857E9CB4692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE4E5369-E9C1-010E-0E5A-2857E9CB4692}.Release|Any CPU.Build.0 = Release|Any CPU
+		{601CBB44-76B6-C2B0-4827-4E0A209FBCB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{601CBB44-76B6-C2B0-4827-4E0A209FBCB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{601CBB44-76B6-C2B0-4827-4E0A209FBCB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{601CBB44-76B6-C2B0-4827-4E0A209FBCB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
