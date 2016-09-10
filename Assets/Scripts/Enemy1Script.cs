@@ -6,7 +6,8 @@ public class Enemy1Script : EnemyScript {
     // Use this for initialization
     [SerializeField]
     private float speed;
-	public override void Start () {
+	public override void Start ()
+    {
         base.Start();
         if (Random.Range(0, 100) >= 50)
         {

@@ -23,6 +23,7 @@ public class LoaderScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        //In case of no internet connection, GameSparks will keep reconnect, and will never finish initializing. So we need to time out.
         if ((DateTime.Now - startAt).TotalSeconds > 7)
         {
             SceneManager.LoadScene("MainMenu");

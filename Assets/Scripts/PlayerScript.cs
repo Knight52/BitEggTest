@@ -85,11 +85,16 @@ public class PlayerScript : MonoBehaviour, IBulletOwner
         bool hasChange = false;
         Vector2 velocity = rigidBody.velocity;
         Vector2 padVelocity = padController.Direction;
-        if (padVelocity != Vector2.zero || (velocity != Vector2.zero && !Input.GetKey("w") && !Input.GetKey("s") && !Input.GetKey("a") && !Input.GetKey("d")))
+        if (padVelocity != Vector2.zero|| (velocity != Vector2.zero
+#if UNITY_EDITOR 
+             && !Input.GetKey("w") && !Input.GetKey("s") && !Input.GetKey("a") && !Input.GetKey("d")
+#endif
+            ))
         {
             hasChange = true;
             velocity = padVelocity;
         }
+#if UNITY_EDITOR
         else
         {
             if (Input.GetKeyDown("w"))
@@ -129,6 +134,7 @@ public class PlayerScript : MonoBehaviour, IBulletOwner
             }
             velocity.Normalize();
         }
+#endif
         if (hasChange)
         {
             velocity *= speed;

@@ -17,7 +17,9 @@ public class DebugHelper : MonoBehaviour
     }
     void OnGUI()
     {
+#if DEBUG
         GUI.Label(new Rect(0, 0, 1920, 1080), log.ToString());
+#endif
     }
 	// Use this for initialization
 	void Start () {

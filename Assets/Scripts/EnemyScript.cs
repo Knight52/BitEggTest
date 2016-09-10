@@ -46,19 +46,20 @@ public class EnemyScript : MonoBehaviour {
     public int HP { get; set; }
 	public virtual void Update ()
     {
-        if (starting < 0) return;
-
-        starting -= Time.deltaTime;
-        if (starting > 0)
+        if (starting >= 0)
         {
-            aura.SetActive(!aura.activeSelf);
-            body.SetActive(aura.activeSelf);
-        }
-        else
-        {
-            gameObject.layer = 9;
-            aura.SetActive(true);
-            body.SetActive(true);
+            starting -= Time.deltaTime;
+            if (starting > 0)
+            {
+                aura.SetActive(!aura.activeSelf);
+                body.SetActive(aura.activeSelf);
+            }
+            else
+            {
+                gameObject.layer = 9;
+                aura.SetActive(true);
+                body.SetActive(true);
+            }
         }
 	}
 }
